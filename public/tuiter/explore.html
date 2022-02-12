@@ -3,10 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://kit.fontawesome.com/c2e7e42fb4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<a href="navigation.html">Back</a>
+<div class="wd-bg-color-black wd-padding-left-16px wd-padding-right-16px wd-padding-bottom-12px">
+    <div class="wd-flex-container wd-flex-col">
+        <div class="wd-flex-container wd-flex-col wd-flex-outline">
+            <div class="wd-flex-container wd-flex-justify-between wd-flex-align-center wd-padding-12px">
+                <i class="fas fa-search wd-fg-color-lightgrey" style="position: relative; left: 35px"></i>
+                <input class="wd-flex-fill wd-rounded-20px wd-bg-color-darkgrey wd-fg-color-white wd-padding-12px wd-padding-left-50px" type="text" placeholder="Search Twitter">
+                <a href="explore-settings.html"><i class="fa-solid fa-gear wd-fg-color-blue wd-padding-left-50px"></i></a>
+            </div>
+            <div class="wd-flex-container wd-flex-justify-around wd-fg-color-grey wd-font-15px">
+                <a class="wd-fg-color-blue wd-padding-16px wd-border-bottom-blue">For you</a>
+                <a class="wd-padding-16px">Trending</a>
+                <a class="wd-padding-16px">COVID-19</a>
+                <a class="wd-padding-16px">News</a>
+                <a class="wd-padding-16px">Sports</a>
+                <a class="wd-padding-16px">Entertainment</a>
+            </div>
+        </div>
+        <div class="wd-padding-top-12px wd-flex-outline"></div>
+        <div class="wd-flex-container wd-flex-col wd-padding-12px wd-flex-outline">
+            <div class="wd-flex-container wd-flex-justify-between wd-flex-align-center">
+                <div class="wd-font-13px wd-fg-color-grey">Trending in Science</div>
+                <i class="fas fa-ellipsis-h wd-fg-color-grey"></i>
+            </div>
+            <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px">Starship</div>
+            <div class="wd-font-13px wd-fg-color-grey wd-padding-top-12px">55.5K Tweets</div>
+        </div>
+        <div class="wd-flex-container wd-padding-12px wd-padding-right-16px wd-flex-justify-between wd-flex-outline">
+            <div class="wd-flex-container wd-flex-col">
+                <div class="wd-font-13px wd-fg-color-white">The New York Times <span class="wd-fg-color-grey"> - Yesterday</span></div>
+                <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px">CNN's Cuomo conundrum: A start anchor with a brother in trouble</div>
+            </div>
+            <img alt="cnn" src="static/cnn.jpg" class="wd-explore-post-image">
+        </div>
+        <div class="wd-flex-container wd-padding-12px wd-padding-right-16px wd-flex-justify-between wd-flex-outline">
+            <div class="wd-flex-container wd-flex-col">
+                <div class="wd-font-13px wd-fg-color-grey">COVID-19 - LIVE</div>
+                <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px">COVID-19: News and updates for Massachusetts</div>
+            </div>
+            <img alt="ma" src="static/ma.jpg" class="wd-explore-post-image">
+        </div>
+        <div class="wd-flex-container wd-padding-12px wd-padding-right-16px wd-flex-justify-between wd-flex-outline">
+            <div class="wd-flex-container wd-flex-col">
+                <div class="wd-font-13px wd-fg-color-white">Bloomberg Opinion <span class="wd-fg-color-grey"> - Yesterday</span></div>
+                <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px">Thinking about getting a booster? Read this first</div>
+            </div>
+            <img alt="booster" src="static/booster.jpg" class="wd-explore-post-image">
+        </div>
+        <div class="wd-flex-container wd-flex-col wd-padding-12px wd-flex-outline">
+            <div class="wd-flex-container wd-flex-justify-between wd-flex-align-center">
+                <div class="wd-font-13px wd-fg-color-grey">Trending in United States</div>
+                <i class="fas fa-ellipsis-h wd-fg-color-grey"></i>
+            </div>
+            <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px">Wonder Bread</div>
+            <div class="wd-font-13px wd-fg-color-grey wd-padding-top-12px">1,259 Tweets</div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="wd-flex-container wd-flex-justify-center wd-bg-color-black">-->
+<!--    <div class="wd-grid-col-16px"></div>-->
+<!--    <div class="wd-grid-col-90 wd-flex-container wd-flex-col wd-flex-outline wd-padding-bottom-2">-->
+<!--        <div class="wd-flex-container wd-flex-row wd-flex-justify-between wd-flex-align-center">-->
+<!--            <div class="wd-flex-container wd-flex-row wd-grid-col-90 wd-padding-2 wd-flex-align-center wd-search-bar">-->
+<!--                <i class="fas fa-search wd-fg-color-white"></i>-->
+<!--                <input class="wd-grid-col-100 wd-rounded-15px wd-bg-color-grey wd-padding-left-2" type="text"-->
+<!--                       placeholder="Search Twitter">-->
+<!--            </div>-->
+<!--            <div class="wd-grid-col-10 wd-fg-color-white wd-icon-justify-center wd-padding-2">-->
+<!--                <i class="fas fa-cog"></i>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="wd-flex-container wd-flex-row wd-flex-justify-evenly wd-padding-2">-->
+<!--            <a class="wd-link wd-link-highlighted">For you</a>-->
+<!--            <a class="wd-link">Trending</a>-->
+<!--            <a class="wd-link">COVID-19</a>-->
+<!--            <a class="wd-link">News</a>-->
+<!--            <a class="wd-link">Sports</a>-->
+<!--            <a class="wd-link">Entertainment</a>-->
+<!--        </div>-->
+<!--        <div class="wd-flex-container wd-flex-col wd-fg-color-white wd-padding-top-2 wd-flex-outline">-->
+<!--            <div class="wd-padding-2 wd-flex-outline wd-flex-container wd-flex-row wd-flex-justify-between">-->
+<!--                <div>-->
+<!--                    <div class="wd-font-13px wd-fg-color-grey">Trending in Science</div>-->
+<!--                    <h3>Startship</h3>-->
+<!--                    <div class="wd-font-13px wd-fg-color-grey">55.5K Tweets</div>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <i class="fas fa-ellipsis-h"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="wd-padding-2 wd-flex-outline wd-flex-container wd-flex-row wd-flex-justify-between">-->
+<!--                <div>-->
+<!--                    <div class="wd-font-13px wd-fg-color-grey">Sports Tranding</div>-->
+<!--                    <h3>Joe Rogan</h3>-->
+<!--                    <div class="wd-font-13px wd-fg-color-grey">5,218 Tweets</div>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <i class="fas fa-ellipsis-h"></i>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="wd-padding-2 wd-flex-outline wd-flex-container wd-flex-row wd-flex-justify-between">-->
+<!--                <div>-->
+<!--                    <div class="wd-font-13px">The New York Times <span class="wd-font-13px wd-fg-color-grey">- Yesterday</span></div>-->
+<!--                    <p>CNN's Cuomo conundrum: A start anchor with a brother in trouble</p>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img alt="cnn" src="static/cnn.jpg" class="wd-post-image">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="wd-padding-2 wd-flex-outline wd-flex-container wd-flex-row wd-flex-justify-between">-->
+<!--                <div>-->
+<!--                    <div class="wd-font-13px wd-fg-color-grey">COVID-19 - LIVE</div>-->
+<!--                    <p>COVID-19: News and updates for Massachusetts</p>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img alt="ma" src="static/ma.jpg" class="wd-post-image">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="wd-padding-2 wd-flex-outline wd-flex-container wd-flex-row wd-flex-justify-between">-->
+<!--                <div>-->
+<!--                    <div class="wd-font-13px">Bloomberg Opinion <span class="wd-font-13px wd-fg-color-grey">- Yesterday</span></div>-->
+<!--                    <p>Thinking about getting a booster? Read this first</p>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <img alt="booster" src="static/booster.jpg" class="wd-post-image">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="wd-padding-2 wd-flex-outline wd-flex-container wd-flex-row wd-flex-justify-between">-->
+<!--                <div>-->
+<!--                    <div class="wd-font-13px wd-fg-color-grey">Trending in United States</div>-->
+<!--                    <h3>Wonder Bread</h3>-->
+<!--                    <div class="wd-font-13px wd-fg-color-grey">1,259 Tweets</div>-->
+<!--                </div>-->
+<!--                <div><i class="fas fa-ellipsis-h"></i></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="wd-grid-col-12px"></div>-->
+<!--</div>-->
 
 </body>
 </html>

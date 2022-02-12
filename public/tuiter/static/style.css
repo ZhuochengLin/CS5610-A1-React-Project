@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Helvetica, serif;
+}
+
+.wd-flex-container {
+    display: flex;
+}
+.wd-flex-col {
+    flex-direction: column;
+}
+.wd-flex-justify-center {
+    justify-content: center;
+}
+.wd-flex-justify-evenly {
+    justify-content: space-evenly;
+}
+.wd-flex-justify-around {
+    justify-content: space-around;
+}
+.wd-flex-justify-between {
+    justify-content: space-between;
+}
+.wd-flex-align-center {
+    align-items: center;
+}
+.wd-flex-align-start {
+    align-items: start;
+}
+.wd-flex-outline {
+    outline: rgb(110, 118, 125) solid 1px;
+}
+.wd-flex-fill {
+    flex-basis: 100%;
+}
+
+.wd-grid-col-12px {
+    width: 12px;
+}
+.wd-grid-col-16px {
+    width: 16px;
+}
+.wd-max-width-506px {
+    max-width: 506px;
+}
+.wd-max-width-504px {
+    width: 504px;
+}
+
+.wd-font-13px {
+    font-size: 13px;
+}
+.wd-font-15px {
+    font-size: 15px;
+}
+.wd-font-20px {
+    font-size: 20px;
+}
+
+.wd-font-bold {
+    font-weight: bold;
+}
+.wd-font-light {
+    font-weight: lighter;
+}
+
+.wd-bg-color-black {
+    background-color: black;
+}
+.wd-bg-color-lightgrey {
+    background-color: lightgray;
+}
+.wd-bg-color-grey {
+    background-color: rgb(110, 118, 125);
+}
+.wd-bg-color-darkgrey {
+    background-color: darkgrey;
+}
+.wd-fg-color-white {
+    color: white;
+}
+.wd-fg-color-red {
+    color: #df4e4e;
+}
+.wd-fg-color-grey {
+    color: rgb(110, 118, 125);
+}
+.wd-fg-color-lightgrey {
+    color: lightgray;
+}
+.wd-fg-color-blue {
+    color: rgb(29, 161, 242);
+}
+
+.wd-padding-12px {
+    padding: 12px;
+}
+.wd-padding-16px {
+    padding: 16px;
+}
+.wd-padding-left-12px {
+    padding-left: 12px;
+}
+.wd-padding-left-16px {
+    padding-left: 16px;
+}
+.wd-padding-left-50px {
+    padding-left: 50px;
+}
+.wd-padding-right-12px {
+    padding-right: 12px;
+}
+.wd-padding-right-16px {
+    padding-right: 16px;
+}
+.wd-padding-top-12px {
+    padding-top: 12px;
+}
+.wd-padding-bottom-12px {
+    padding-bottom: 12px;
+}
+
+.wd-explore-post-image {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+.wd-bookmark-avatar-image {
+    position: relative;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    overflow: hidden;
+}
+.wd-bookmark-post-image {
+    width: 504px;
+    height: 264px;
+    overflow: hidden;
+}
+
+.wd-rounded-20px {
+    border-radius: 20px;
+}
+.wd-rounded-top-10px {
+    border-radius: 10px 10px 0 0;
+}
+.wd-rounded-bottom-10px {
+    border-radius: 0 0 10px 10px;
+}
+
+.wd-icon-link {
+    text-decoration: none
+}
+.wd-icon-link:visited, .wd-icon-link:active {
+    color: rgb(110, 118, 125);
+}
+
+.wd-border-bottom-blue {
+    border-bottom: rgb(29, 161, 242) solid 5px;
+}
