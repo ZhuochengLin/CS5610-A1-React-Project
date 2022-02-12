@@ -149,7 +149,8 @@ body {
 }
 
 .wd-icon-link {
-    text-decoration: none
+    text-decoration: none;
+    color: rgb(110, 118, 125);
 }
 .wd-icon-link:visited, .wd-icon-link:active {
     color: rgb(110, 118, 125);
