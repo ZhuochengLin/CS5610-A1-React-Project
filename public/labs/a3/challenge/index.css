@@ -136,13 +136,13 @@
 .animation-keyframes-2times {
     position: relative;
     top: 0px;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-name: slide2times;
     width: 300px;
     height: 300px;
     background-color: blue;
     color: white;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 @keyframes slide2times {
@@ -150,41 +150,21 @@
         position: relative;
         top: 0px;
         font-size: 100%;
-        margin-left: 100%;
+        margin-left: 50%;
         width: 300px;
         height: 300px;
         background-color: yellow;
         color: black;
     }
-    25% {
-        position: relative;
-        top: 100px;
-        font-size: 80%;
-        margin-left: 75%;
-        width: 400px;
-        height: 400px;
-        background-color: yellow;
-        color: black;
-    }
     50% {
         position: relative;
-        top: 200px;
+        top: 0px;
         font-size: 50%;
-        margin-left: 50%;
-        width: 400px;
-        height: 400px;
+        margin-left: 25%;
+        width: 300px;
+        height: 300px;
         background-color: yellow;
         color: black;
-    }
-    75% {
-        position: relative;
-        top: 100px;
-        font-size: 80%;
-        margin-left: 25%;
-        width: 400px;
-        height: 400px;
-        background-color: blue;
-        color: white;
     }
     to {
         position: relative;
@@ -250,31 +230,19 @@
     flex-basis: 100%;
 }
 @media (min-width: 0px) and (max-width: 600px) {
-    h1, h2, h3 {
-        background-color: black;
-        color: white;
-    }
-    .media-query {
+    .my-media-query {
         background-color: red;
         color: white;
     }
 }
 @media (min-width: 600px) and (max-width: 1200px) {
-    p {
-        background-color: green;
-        color: white;
-    }
-    .media-query {
+    .my-media-query {
         background-color: green;
         color: white;
     }
 }
 @media (min-width: 1200px) and (max-width: 1800px) {
-    div {
-        background-color: blueviolet;
-        color: white;
-    }
-    .media-query {
+    .my-media-query {
         background-color: blueviolet;
         color: white;
     }
