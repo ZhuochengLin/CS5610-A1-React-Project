@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: white;
+}
+#search-bar input, .input-group-text {
+    background-color: #343333 !important;
+    border-color: black!important;
+    color: grey;
+}
+#search-bar ::selection {
+    color: #bebcbc;
+    background-color: grey;
+}
+#right-sidebar .btn-primary {
+    background-color: white;
+    color: black;
+}
+
+.nav-item a {
+    color: white;
+}
+.nav-item a:hover {
+    color: lightgray;
+}
+.nav-item .bg-primary {
+    background-color: #42aaf8 !important;
+}
+
+.btn-primary.override-bs {
+    background-color: #42aaf8;
+}
+
+.border {
+    border-color: #4f4f4f !important;
+}
+
+.nav-tabs a {
+    color: grey;
+}
+.nav-tabs a:focus {
+    color: #aeaeae;
+}
+.nav-tabs a:active {
+    color: #aeaeae;
+}
+.nav-tabs .active {
+     color: black!important;
+ }
+.nav-tabs {
+    border-color: #4f4f4f;
+}

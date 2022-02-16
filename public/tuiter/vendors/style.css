@@ -1,0 +1,40 @@
+#search-bar .input-group-text.override-bs {
+    border-radius: 1.5rem 0 0 1.5rem
+}
+#search-bar .form-control.override-bs {
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+#head-post .carousel-caption.override-bs {
+    padding-bottom: 0;
+    padding-left: 0;
+    text-align: start;
+}
+.avatar-dimension {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    /* div height = 100% = width */
+    padding-top:100%;
+    border-radius: 50%;
+    /* center the original*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .expand-lg {
+        width: 120%;
+    }
+}
+
+.nav-item a {
+    color: black;
+}
+
+.form-control:focus {
+    border-color: #ced4da!important;
+}
