@@ -1,14 +1,3 @@
-#search-bar .input-group-text.override-bs {
-    border-radius: 1.5rem 0 0 1.5rem
-}
-#search-bar .form-control.override-bs {
-    border-radius: 0 1.5rem 1.5rem 0;
-}
-#head-post .carousel-caption.override-bs {
-    padding-bottom: 0;
-    padding-left: 0;
-    text-align: start;
-}
 .avatar-dimension {
     max-width: 100%;
     width: 100%;
@@ -30,11 +19,22 @@
         width: 120%;
     }
 }
-
-.nav-item a {
+#left-sidebar a {
     color: black;
 }
 
-.form-control:focus {
-    border-color: #ced4da!important;
+#main-search-field input {
+    z-index: 0!important;
+}
+#main-search-field i {
+    left: 1.2rem;
+    z-index: 1!important;
+}
+
+#stack-icon-more i {
+    bottom: 0.1rem;
+}
+
+.fa-stack.small {
+    font-size: 0.5em;
 }

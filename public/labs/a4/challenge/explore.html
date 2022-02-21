@@ -12,63 +12,69 @@
 
 <div class="container">
     <div class="row mt-2 mb-2">
-        <div class="col d-none d-sm-block col-sm-2 col-lg-1 col-xl-2">
+        <div id="left-sidebar" class="col d-none d-sm-block col-sm-2 col-lg-1 col-xl-2">
             <div class="nav flex-column col-12 col-md-12 col-lg-6 col-xl-12">
-                <div class="nav-item">
+                <div class="nav-item border">
                     <a class="nav-link"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link"><i class="fas fa-home"></i><span class="ms-2 d-none d-xl-inline">Home</span></a>
+                <div class="nav-item border">
+                    <a class="nav-link row" href="home.html"><i class="col-2 fas fa-home"></i><span class=" col-10 d-none d-xl-inline">Home</span></a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link bg-primary active"><i class="fas fa-hashtag"></i><span class="ms-2 d-none d-xl-inline">Explore</span></a>
+                <div class="nav-item bg-primary">
+                    <a class="nav-link row text-white active" href="explore.html"><i class="col-2 fas fa-hashtag"></i><span class="col-10 d-none d-xl-inline">Explore</span></a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link"><i class="fas fa-bell"></i><span class="ms-2 d-none d-xl-inline">Notifications</span></a>
+                <div class="nav-item border">
+                    <a class="nav-link row" href="notifications.html"><i class="col-2 fas fa-bell"></i><span class="col-10 d-none d-xl-inline">Notifications</span></a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link"><i class="fas fa-envelope"></i><span class="ms-2 d-none d-xl-inline">Messages</span></a>
+                <div class="nav-item border">
+                    <a class="nav-link row" href="messages.html"><i class="col-2 fas fa-envelope"></i><span class="col-10 d-none d-xl-inline">Messages</span></a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link"><i class="fas fa-bookmark"></i><span class="ms-2 d-none d-xl-inline">Bookmarks</span></a>
+                <div class="nav-item border">
+                    <a class="nav-link row" href="bookmarks.html"><i class="col-2 fas fa-bookmark"></i><span class="col-10 d-none d-xl-inline">Bookmarks</span></a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link"><i class="fas fa-list"></i><span class="ms-2 d-none d-xl-inline">Lists</span></a>
+                <div class="nav-item border">
+                    <a class="nav-link row" href="lists.html"><i class="col-2 fas fa-list"></i><span class="col-10 d-none d-xl-inline">Lists</span></a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link"><i class="fas fa-user"></i><span class="ms-2 d-none d-xl-inline">Profile</span></a>
+                <div class="nav-item border">
+                    <a class="nav-link row" href="profile.html"><i class="col-2 fas fa-user"></i><span class="col-10 d-none d-xl-inline">Profile</span></a>
                 </div>
-                <div class="nav-item">
-                    <a class="nav-link"><i class="fas fa-ellipsis-h"></i><span class="ms-2 d-none d-xl-inline">More</span></a>
+                <div class="nav-item border">
+                    <a class="nav-link row ps-4">
+                        <i id="stack-icon-more" class="col-2 fa-stack small">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-ellipsis-h fa-stack-1x"></i>
+                        </i>
+                        <span class="col-10 d-none d-xl-inline ps-lg-1 ps-xxl-2 text-start">More</span>
+                    </a>
                 </div>
             </div>
-            <button class="btn btn-primary flex-fill rounded-pill mt-2 col-12 expand-lg override-bs">Tweet</button>
+            <button class="btn btn-primary rounded-pill mt-2 col-12 expand-lg">Tweet</button>
         </div>
-        <div class="container col-12 col-sm-10 col-lg-6 col-xl-6">
+        <div id="main" class="col-12 col-sm-10 col-lg-7 col-xl-6">
             <div class="row align-items-center">
-                <div class="col-11">
-                    <div id="search-bar" class="input-group">
-                        <span class="input-group-text bg-white border-end-0 override-bs"><i class="col-1 fas fa-search"></i></span>
-                        <input type="text" class="form-control border-start-0 override-bs shadow-none" placeholder="Search Twitter">
+                    <div class="col-11 pe-1 pe-md-2">
+                        <div id="main-search-field" class="input-group align-items-center">
+                            <input type="text" class="col form-control rounded-pill ps-5" placeholder="Search Twitter">
+                            <i class="col fas fa-search position-absolute"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-1"><i class="fas fa-cog fa-lg"></i></div>
+                    <i class="col-1 ps-0 ps-md-1 fas fa-cog fa-2x text-primary"></i>
             </div>
-            <ul class="nav nav-tabs mt-2">
+            <ul class="nav nav-tabs mt-2 nav-fill">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">For you</a>
+                    <a class="nav-link" aria-current="page" href="for-you.html">For You</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Trending</a>
+                    <a class="nav-link" href="trending.html">Trending</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="news.html">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sports</a>
+                    <a class="nav-link" href="sports.html">Sports</a>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                    <a class="nav-link" href="#">Entertainment</a>
+                    <a class="nav-link active" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
             <div class="row mt-2 position-relative">
@@ -86,7 +92,7 @@
                                         Web Development
                                     </div>
                                     <div class="col-12">
-                                        <span class="fw-bold">ReactJS</span> <i class="fas fa-check-circle"></i> <span class="text-secondary"> - 2h</span>
+                                        <span class="fw-bold">ReactJS</span> <i class="fas fa-check-circle"></i><span class="text-secondary"> - 2h</span>
                                     </div>
                                     <div class="col-12 text-wrap fw-bold">
                                         React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
@@ -173,7 +179,7 @@
                 </div>
             </div>
         </div>
-        <div id="right-sidebar" class="container col d-none d-lg-block col-lg-5 col-xl-4">
+        <div id="right-sidebar" class="col d-none d-lg-block col-lg-4 col-xl-4">
             <div class="row">
                 <div class="col-12 p-2 ps-3 border fw-bold">
                     Who to follow
@@ -183,17 +189,17 @@
                         <div class="col-2">
                             <div class="avatar-dimension" style="background-image: url('static/java.png')"></div>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 col-lg-6 col-xl-7">
                             <div class="row">
-                                <div class="col-12 fw-bold">
+                                <div class="col-12 fw-bold p-0">
                                     Java <i class="fas fa-check-circle"></i>
                                 </div>
-                                <div class="col-12 text-secondary">
+                                <div class="col-12 text-secondary p-0">
                                     @Java
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 col-lg-4 col-xl-3">
                             <button class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
@@ -203,17 +209,17 @@
                         <div class="col-2">
                             <div class="avatar-dimension" style="background-image: url('static/relativity.jpg')"></div>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 col-lg-6 col-xl-7">
                             <div class="row">
-                                <div class="col-12 fw-bold">
+                                <div class="col-12 fw-bold p-0">
                                     Relativity Space <i class="fas fa-check-circle"></i>
                                 </div>
-                                <div class="col-12 text-secondary">
+                                <div class="col-12 text-secondary p-0">
                                     @relativityspace
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 col-lg-4 col-xl-3">
                             <button class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
@@ -223,17 +229,17 @@
                         <div class="col-2">
                             <div class="avatar-dimension" style="background-image: url('static/virgin.jpg')"></div>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 col-lg-6 col-xl-7">
                             <div class="row">
-                                <div class="col-12 fw-bold">
+                                <div class="col-12 fw-bold p-0">
                                     Virgin Galactic <i class="fas fa-check-circle"></i>
                                 </div>
-                                <div class="col-12 text-secondary">
+                                <div class="col-12 text-secondary p-0">
                                     @virgingalactic
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 col-lg-4 col-xl-3">
                             <button class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
@@ -243,17 +249,17 @@
                         <div class="col-2">
                             <div class="avatar-dimension" style="background-image: url('static/nasa.jpg')"></div>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 col-lg-6 col-xl-7">
                             <div class="row">
-                                <div class="col-12 fw-bold">
+                                <div class="col-12 fw-bold p-0">
                                     NASA <i class="fas fa-check-circle"></i>
                                 </div>
-                                <div class="col-12 text-secondary">
+                                <div class="col-12 text-secondary p-0">
                                     @NASA
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 col-lg-4 col-xl-3">
                             <button class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
@@ -263,17 +269,17 @@
                         <div class="col-2">
                             <div class="avatar-dimension" style="background-image: url('static/tesla.png')"></div>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 col-lg-6 col-xl-7">
                             <div class="row">
-                                <div class="col-12 fw-bold">
+                                <div class="col-12 fw-bold p-0">
                                     Tesla <i class="fas fa-check-circle"></i>
                                 </div>
-                                <div class="col-12 text-secondary">
+                                <div class="col-12 text-secondary p-0">
                                     @Tesla
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 col-lg-4 col-xl-3">
                             <button class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </div>
