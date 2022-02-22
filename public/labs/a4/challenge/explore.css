@@ -24,7 +24,11 @@ body {
 }
 
 #main .border {
-    border: #393939 solid 1px!important;
+    border: #393939 solid 0.1rem!important;
+}
+#main-search-field .border {
+    border-top: none!important;
+    border-bottom: none!important;
 }
 #main-search-field input {
     background-color: #323232;
@@ -38,7 +42,7 @@ body {
     color: grey;
 }
 #main .nav-tabs {
-    border-bottom: none;
+    border-top: none!important;
 }
 #main .nav-tabs .nav-item .nav-link {
     border: none;
