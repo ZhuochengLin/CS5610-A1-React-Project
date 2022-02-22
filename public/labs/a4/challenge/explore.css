@@ -65,6 +65,10 @@ body {
     border: none;
     border-bottom: #3296d4 solid 0.3rem;
 }
+#main div.border {
+    border-bottom: none!important;
+    border-top: none!important;
+}
 
 #right-sidebar .border {
     border: none!important;
