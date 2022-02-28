@@ -12,12 +12,12 @@ const posts = [
     {
         topic: "Web Development", userName: "jQuery", time: "",
         title: "",
-        image: "../static/jquery.jpg", tweets: "123K Tweets"
+        image: "../static/jquery.jpg", tweets: "456K Tweets"
     },
     {
         topic: "Web Development", userName: "NodeJS", time: "last month",
         title: "",
-        image: "../static/nodejs.jpg", tweets: "123K Tweets"
+        image: "../static/nodejs.jpg", tweets: "567K Tweets"
     },
 ];
 export default posts;

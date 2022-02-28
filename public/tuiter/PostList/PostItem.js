@@ -8,26 +8,27 @@ const PostItem = (post) => {
                 <div class="d-flex flex-row justify-content-between">
                     <div>
                         <span class="text-white fw-bold">${post.userName} </span><i class="fas fa-check-circle text-white"></i>
-                        <span>@${post.handle} </span>
-                        <span>${post.time ? `- ${post.time}` : ""}</span></div>
-                    <i class="fas fa-ellipsis-h"></i>
+                        <span class="text-secondary">@${post.handle} </span>
+                        <span class="text-secondary">${post.time ? `- ${post.time}` : ""}</span></div>
+                    <i class="fas fa-ellipsis-h text-secondary"></i>
                 </div>
                 <div class="text-white">
                     ${post.content}
                 </div>
-                    <img class="img-fluid mt-2 rounded-top border" src=${post.image}>
+<!--                TODO: logic-->
+                    <img class="img-fluid mt-2 rounded-top border ${post.title ? "" : "rounded-bottom"}" src=${post.image}>
                     <div class="border rounded-bottom p-2" ${post.title ? "" : "hidden"}>
                         <div class="text-white">${post.title}</div>
-                        <div>
+                        <div class="text-secondary">
                             ${post.abstract}
                         </div>
-                        <div><i class="fas fa-link"></i> ${post.website}</div>
+                        <div class="text-secondary"><i class="fas fa-link"></i> ${post.website}</div>
                 </div>
                 <div class="d-flex flex-row justify-content-between mt-2 ps-2 pe-2">
-                        <a href="#" class="text-decoration-none text-reset"><i class="fas fa-comment"></i><span class="ps-3">${post.comment}</span></a>
-                        <a href="#" class="text-decoration-none text-reset"><i class="fas fa-sync"></i><span class="ps-3">${post.retweet}</span></a>
-                        <a href="#" class="text-decoration-none text-reset"><i class="fas fa-heart"></i><span class="ps-3">${post.like}</span></a>
-                        <a href="#" class="text-decoration-none text-reset"><i class="fas fa-upload"></i><span class="ps-3"></span></a>
+                        <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-comment"></i><span class="ps-3">${post.comment}</span></a>
+                        <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-sync"></i><span class="ps-3">${post.retweet}</span></a>
+                        <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-heart"></i><span class="ps-3">${post.like}</span></a>
+                        <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-upload"></i><span class="ps-3"></span></a>
                 </div>
             </div>
         </div>
