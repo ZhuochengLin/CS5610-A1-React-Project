@@ -13,9 +13,6 @@
 
     background-size: cover;
 }
-.border-bottom {
-    border-bottom: 1px solid #282828!important;
-}
 .fa-stack.small {
     font-size: 0.5em;
 }
@@ -30,11 +27,6 @@
 #left-sidebar .fa-stack {
     width: 2em;
 }
-
-#main-search-field input {
-    z-index: 0!important;
-}
-#main-search-field i {
-    left: 1.2rem;
-    z-index: 1!important;
+.btn {
+    padding:.375rem .75rem;
 }
