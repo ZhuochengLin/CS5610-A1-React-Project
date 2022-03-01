@@ -25,9 +25,9 @@ const PostItem = (post) => {
                         <div class="text-secondary"><i class="fas fa-link"></i> ${post.website}</div>
                 </div>
                 <div class="d-flex flex-row justify-content-between mt-2 ps-2 pe-2">
-                        <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-comment"></i><span class="ps-3">${post.comment}</span></a>
-                        <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-sync"></i><span class="ps-3">${post.retweet}</span></a>
-                        <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-heart"></i><span class="ps-3">${post.like}</span></a>
+                        <a href="#" class="text-decoration-none text-secondary"><i class="far fa-comment"></i><span class="ps-3">${post.comment}</span></a>
+                        <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-retweet"></i><span class="ps-3">${post.retweet}</span></a>
+                        <a href="#" class="text-decoration-none text-secondary"><i class="far fa-heart"></i><span class="ps-3">${post.like}</span></a>
                         <a href="#" class="text-decoration-none text-secondary"><i class="fas fa-upload"></i><span class="ps-3"></span></a>
                 </div>
             </div>
