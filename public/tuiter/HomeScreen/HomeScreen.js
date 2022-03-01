@@ -8,7 +8,7 @@ const init = () => {
             <div id="left-sidebar" class="col d-none d-sm-block col-sm-2 col-lg-1 col-xl-2">
                 ${NavigationSidebar("home")}
             </div>      
-            <div id="main" class="col-12 col-sm-10 col-lg-7 col-xl-6">
+            <div id="main" class="col-12 col-sm-10 col-lg-7 col-xl-6 ps-4 pe-4">
                 ${PostList()}
             </div>
             <div id="right-sidebar" class="col d-none d-lg-block col-lg-4">
