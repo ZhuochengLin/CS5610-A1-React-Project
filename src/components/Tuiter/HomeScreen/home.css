@@ -1,0 +1,11 @@
+.border {
+    border-color: #343434!important;
+}
+.rounded-top {
+    border-top-right-radius: 20px!important;
+    border-top-left-radius: 20px!important;
+}
+.rounded-bottom {
+    border-bottom-right-radius: 20px!important;
+    border-bottom-left-radius: 20px!important;
+}

@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import "./vendors/bootstrap/css/bootswatch.bootstrap.min.css"
+import './vendors/fontawesome-5.15.4/css/all.min.css';
+import './style.css'
+import HelloWorld from "./components/HelloWorld";
+import Labs from "./Labs";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import ExploreScreen from "./components/Tuiter/ExploreScreen";
+import HomeScreen from "./components/Tuiter/HomeScreen";
+import Tuiter from "./components/Tuiter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+          <div className="container">
+              <Routes>
+                  <Route path="/hello" element={<HelloWorld/>} exact={true}/>
+                  <Route path="/labs" element={<Labs/>} exact={true}/>
+                  <Route path="/" element={<Tuiter/>}/>
+                  <Route path="/tuiter" element={<ExploreScreen/>} exact={true}/>
+                  <Route path="/tuiter/home" element={<HomeScreen/>} exact={true}/>
+                  <Route path="/tuiter/explore" element={<ExploreScreen/>} exact={true}/>
+              </Routes>
+          </div>
+      </BrowserRouter>
   );
 }
 

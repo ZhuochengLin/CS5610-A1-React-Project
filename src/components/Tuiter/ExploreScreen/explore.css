@@ -1,0 +1,7 @@
+#main-search-field input {
+    z-index: 0!important;
+}
+#main-search-field i {
+    left: 1.2rem;
+    z-index: 1!important;
+}

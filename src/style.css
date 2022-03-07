@@ -1,0 +1,32 @@
+.avatar-dimension {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    /* div height = 100% = width */
+    padding-top:100%;
+    border-radius: 50%;
+    /* center the original*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+.fa-stack.small {
+    font-size: 0.5em;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .expand-lg {
+        width: 120%;
+    }
+}
+#left-sidebar a {
+    color: white;
+}
+#left-sidebar .fa-stack {
+    width: 2em;
+}
+.btn {
+    padding:.375rem .75rem;
+}
