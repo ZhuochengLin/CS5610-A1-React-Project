@@ -16,8 +16,8 @@ function App() {
               <Routes>
                   <Route path="/hello" element={<HelloWorld/>} exact={true}/>
                   <Route path="/labs" element={<Labs/>} exact={true}/>
-                  <Route path="/" element={<Tuiter/>}/>
-                  <Route path="/tuiter" element={<ExploreScreen/>} exact={true}/>
+                  <Route path="/" element={<Labs/>}/>
+                  <Route path="/tuiter" element={<Tuiter/>} exact={true}/>
                   <Route path="/tuiter/home" element={<HomeScreen/>} exact={true}/>
                   <Route path="/tuiter/explore" element={<ExploreScreen/>} exact={true}/>
               </Routes>

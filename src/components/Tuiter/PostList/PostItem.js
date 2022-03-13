@@ -23,31 +23,31 @@ const PostItem = ({
                 <div className="col-11">
                     <div className="d-flex flex-row justify-content-between">
                         <div>
-                            <span className="text-white fw-bold">${post.userName} </span><i
+                            <span className="text-white fw-bold">{post.userName} </span><i
                             className="fas fa-check-circle text-white"/>
-                            <span className="text-secondary">@${post.handle} </span>
-                            <span className="text-secondary">${post.time ? `- ${post.time}` : ""}</span></div>
+                            <span className="text-secondary"> @{post.handle}</span>
+                            <span className="text-secondary"> {post.time ? `- ${post.time}` : ""}</span></div>
                         <i className="fas fa-ellipsis-h text-secondary"/>
                     </div>
                     <div className="text-white">
-                        ${post.content}
+                        {post.content}
                     </div>
                     <img className={`img-fluid mt-2 rounded-top border ${post.title ? "" : " rounded-bottom"}`}
                          src={post.image}/>
                     <div className="border rounded-bottom p-2" hidden={!post.title}>
-                        <div className="text-white">${post.title}</div>
+                        <div className="text-white">{post.title}</div>
                         <div className="text-secondary">
-                            ${post.abstract}
+                            {post.abstract}
                         </div>
-                        <div className="text-secondary"><i className="fas fa-link"/> ${post.website}</div>
+                        <div className="text-secondary"><i className="fas fa-link"/> {post.website}</div>
                     </div>
                     <div className="d-flex flex-row justify-content-between mt-2 ps-2 pe-2">
                         <a href="#" className="text-decoration-none text-secondary"><i
-                            className="far fa-comment"/><span className="ps-3">${post.comment}</span></a>
+                            className="far fa-comment"/><span className="ps-3">{post.comment}</span></a>
                         <a href="#" className="text-decoration-none text-secondary"><i
-                            className="fas fa-retweet"/><span className="ps-3">${post.retweet}</span></a>
+                            className="fas fa-retweet"/><span className="ps-3">{post.retweet}</span></a>
                         <a href="#" className="text-decoration-none text-secondary"><i className="far fa-heart"/><span
-                            className="ps-3">${post.like}</span></a>
+                            className="ps-3">{post.like}</span></a>
                         <a href="#" className="text-decoration-none text-secondary"><i
                             className="fas fa-upload"/><span className="ps-3"/></a>
                     </div>

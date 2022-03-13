@@ -1,5 +1,5 @@
 import TodoItem from "./TodoItem.js";
-import todos from "./todos.js";
+import todos from "./todos.json";
 
 const TodoList = () => {
     return (
