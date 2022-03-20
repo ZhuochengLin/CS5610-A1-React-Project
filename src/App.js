@@ -1,5 +1,6 @@
 import './App.css';
-import "./vendors/bootstrap/css/bootswatch.bootstrap.min.css"
+import "./vendors/bootstrap/css/bootstrap.min.css";
+import "./vendors/bootstrap/css/bootstrap.min.css"
 import './vendors/fontawesome-5.15.4/css/all.min.css';
 import './style.css'
 import HelloWorld from "./components/HelloWorld";
