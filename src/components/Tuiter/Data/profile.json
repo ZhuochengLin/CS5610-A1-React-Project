@@ -1,0 +1,17 @@
+{
+  "firstName": "Zhuocheng",
+  "lastName": "Lin",
+  "handle": "zhuochenglin",
+  "profilePicture": "./static/lin.jpg",
+  "bannerPicture": "./static/banner.jpg",
+  "bio": "Hello, I'm Zhuocheng Lin. Nice to meet you!",
+  "location": "Boston, MA",
+  "dateOfBirth": "1997-02-26",
+  "dateJoined": "2019-11-23",
+  "website": "https://www.linkedin.com/in/zhuocheng-lin/",
+  "stats": {
+    "tuitsCount": 12,
+    "followingCount": 10,
+    "followersCount": 15
+  }
+}

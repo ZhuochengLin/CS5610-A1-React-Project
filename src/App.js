@@ -8,18 +8,24 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import ExploreScreen from "./components/Tuiter/ExploreScreen";
 import HomeScreen from "./components/Tuiter/HomeScreen";
 import Tuiter from "./components/Tuiter";
+import ProfileScreen from "./components/Tuiter/ProfileScreen";
 
 function App() {
   return (
       <BrowserRouter>
           <div className="container">
               <Routes>
-                  <Route path="/hello" element={<HelloWorld/>} exact={true}/>
-                  <Route path="/labs" element={<Labs/>} exact={true}/>
-                  <Route path="/" element={<Labs/>}/>
-                  <Route path="/tuiter" element={<Tuiter/>} exact={true}/>
-                  <Route path="/tuiter/home" element={<HomeScreen/>} exact={true}/>
-                  <Route path="/tuiter/explore" element={<ExploreScreen/>} exact={true}/>
+                  <Route path="/" >
+                      <Route index element={<HelloWorld/>}/>
+                      <Route path="hello" element={<HelloWorld/>}/>
+                      <Route path="labs" element={<Labs/>}/>
+                      <Route path="tuiter" element={<Tuiter/>}>
+                          <Route index element={<HomeScreen/>}/>
+                          <Route path="explore" element={<ExploreScreen/>}/>
+                          <Route path="profile" element={<ProfileScreen/>}/>
+                          {/*<Route path="notifications" element={}/>*/}
+                      </Route>
+                  </Route>
               </Routes>
           </div>
       </BrowserRouter>

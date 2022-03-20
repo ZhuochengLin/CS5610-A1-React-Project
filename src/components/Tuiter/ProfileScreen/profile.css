@@ -1,0 +1,14 @@
+.banner-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-control {
+    color: white!important;
+    background-color: #363636 !important;
+    box-shadow:none!important;
+}
+.btn-outline-secondary {
+    color: white!important;
+    font-weight: bold;
+    outline-color: #ffffff !important;
+}

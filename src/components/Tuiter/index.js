@@ -1,14 +1,33 @@
 import React from "react";
 import ExploreScreen from "./ExploreScreen";
-import {Link} from "react-router-dom";
+import {Outlet} from "react-router-dom";
+import NavigationSidebar from "./NavigationSidebar";
+import ExploreComponent from "./ExploreScreen/ExploreComponent";
+import WhoToFollowList from "./WhoToFollowList";
+import {Provider} from "react-redux";
+import {combineReducers, createStore} from "redux";
+import WhoReducer from "./Reducers/WhoReducer";
+import TuitsReducer from "./Reducers/TuitsReducer";
+import ProfileReducer from "./Reducers/ProfileReducer";
+
+const reducers = combineReducers({tuits: TuitsReducer, who: WhoReducer, profile: ProfileReducer})
+const store = createStore(reducers);
 
 const Tuiter = () => {
     return (
-        <>
-            {/*<h1>Tuiter</h1>*/}
-            {/*<Link to="/hello">Hello</Link> | <Link to="/">Labs</Link>*/}
-            {<ExploreScreen/>}
-        </>
+        <Provider store={store}>
+            <div className="row mt-2 mb-2">
+                <div id="left-sidebar" className="col d-none d-sm-block col-sm-2 col-lg-1 col-xl-2">
+                    <NavigationSidebar active="home"/>
+                </div>
+                <div id="main" className="col-12 col-sm-10 col-lg-7 col-xl-6">
+                    <Outlet/>
+                </div>
+                <div id="right-sidebar" className="col d-none d-lg-block col-lg-4 col-xl-4">
+                    <WhoToFollowList/>
+                </div>
+            </div>
+        </Provider>
     )
 };
 export default Tuiter;
