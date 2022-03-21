@@ -4,6 +4,7 @@ import "./index.css";
 const Classes = () => {
     const color = "blue";
     const dangerous = true;
+    const notDangerous = true;
     return(
         <div>
             <h2>Classes</h2>
@@ -19,7 +20,7 @@ const Classes = () => {
             <div className={`${dangerous ? "wd-bg-red" : "wd-bg-green"} wd-fg-black wd-padding-10px`}>
                 Dangerous background
             </div>
-            <div className={`${!dangerous ? "wd-bg-red" : "wd-bg-green"} wd-fg-black wd-padding-10px`}>
+            <div className={`${notDangerous ? "wd-bg-green" : "wd-bg-red"} wd-fg-black wd-padding-10px`}>
                 Not Dangerous background
             </div>
         </div>
