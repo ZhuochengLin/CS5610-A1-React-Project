@@ -6,9 +6,13 @@ import WhatsHappening from "./WhatsHappening";
 
 const HomeScreen = () => {
     return (
-        <div>
-            <WhatsHappening/>
-            <TuitList/>
+        <div className="row">
+            <div className="col-12">
+                <WhatsHappening/>
+            </div>
+            <div className="col-12">
+                <TuitList/>
+            </div>
         </div>
     )
 };

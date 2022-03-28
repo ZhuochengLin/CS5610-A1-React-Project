@@ -22,6 +22,7 @@ function App() {
                       <Route path="labs" element={<Labs/>}/>
                       <Route path="tuiter" element={<Tuiter/>}>
                           <Route index element={<HomeScreen/>}/>
+                          <Route path="home" element={<HomeScreen/>}/>
                           <Route path="explore" element={<ExploreScreen/>}/>
                           <Route path="profile" element={<ProfileScreen/>}/>
                           {/*<Route path="notifications" element={}/>*/}

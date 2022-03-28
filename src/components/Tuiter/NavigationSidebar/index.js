@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
-const NavigationSidebar = () => {
-    const [active, setActive] = useState("home");
+const NavigationSidebar = ({initialActive="home"}) => {
+    const [active, setActive] = useState(initialActive ? initialActive : "home");
     const changeActiveOnClick = (newActive) => {
         setActive(newActive);
     }

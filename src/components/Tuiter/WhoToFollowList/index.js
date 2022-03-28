@@ -1,4 +1,3 @@
-import who from "../Data/who.json";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 import {useSelector} from "react-redux";
 
