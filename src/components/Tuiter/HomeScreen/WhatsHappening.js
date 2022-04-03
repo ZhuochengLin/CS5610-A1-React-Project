@@ -1,16 +1,10 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {createTuit} from "../Reducers/tuits-actions";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState("");
     const dispatch = useDispatch()
-    const tuitClickHandler = () => {
-        const action = {
-            type: "create-tuit",
-            tuit: whatsHappening
-        };
-        dispatch(action);
-    };
     return (
         <>
             <div className="row align-items-center ms-0">
@@ -33,7 +27,7 @@ const WhatsHappening = () => {
                     <span className="pe-2"><i className="fas fa-smile"/></span>
                     <span className="pe-2"><i className="fas fa-calendar"/></span>
                 </div>
-                <button className="col-3 col-sm-2 btn btn-primary rounded-pill" onClick={tuitClickHandler}>Tweet</button>
+                <button className="col-3 col-sm-2 btn btn-primary rounded-pill" onClick={() => createTuit(dispatch, whatsHappening)}>Tweet</button>
             </div>
         </>
     )

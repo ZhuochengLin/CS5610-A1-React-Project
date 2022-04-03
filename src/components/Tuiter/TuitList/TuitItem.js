@@ -1,10 +1,11 @@
 import {useDispatch} from "react-redux";
 import TuitStats from "./TuitStats";
+import {deleteTuit} from "../Reducers/tuits-actions";
 
 const TuitItem = ({
                       tuit = {
                           avatar: "./static/elon_musk.jpg",
-                          postedBy: {userName: "Elon Mush"},
+                          postedBy: {username: "Elon Mush"},
                           handle: "elonmush",
                           time: "23h",
                           tuit: "Amazing show about <a href='#' class='link-primary text-decoration-none'>@Inspiration4x</a> mission!",
@@ -20,13 +21,6 @@ const TuitItem = ({
                       }
                   }) => {
     const dispatch = useDispatch();
-    const deleteTuit = () => {
-        const action = {
-            type: "delete-tuit",
-            tuit: tuit
-        };
-        dispatch(action);
-    };
     return (
         <>
             <div className="row pt-1 border p-2 pt-2">
@@ -36,11 +30,11 @@ const TuitItem = ({
                 <div className="col-11">
                     <div className="d-flex flex-row justify-content-between">
                         <div>
-                            <span className="text-white fw-bold">{tuit.postedBy.userName} </span><i
+                            <span className="text-white fw-bold">{tuit.postedBy.username} </span><i
                             className="fas fa-check-circle text-white"/>
                             <span className="text-secondary"> @{tuit.handle}</span>
                             <span className="text-secondary"> {tuit.time ? `- ${tuit.time}` : ""}</span></div>
-                        <i onClick={deleteTuit} className="fas fa-times"/>
+                        <i onClick={() => deleteTuit(dispatch, tuit)} className="fas fa-times"/>
                     </div>
                     <div className="text-white">
                         {tuit.tuit}

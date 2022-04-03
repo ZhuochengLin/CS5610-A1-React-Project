@@ -3,7 +3,7 @@
         "_id": "123",
         "avatar": "static/elon_musk.jpg",
         "postedBy": {
-            "userName": "Elon Mush"
+            "username": "Elon Mush"
         },
         "handle": "elonmush",
         "time": "23h",
@@ -22,7 +22,7 @@
         "_id": "234",
         "avatar": "static/new_york_post.png",
         "postedBy": {
-            "userName": "New York Post"
+            "username": "New York Post"
         },
         "handle": "nypost",
         "time": "23h",

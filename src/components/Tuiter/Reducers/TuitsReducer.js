@@ -1,39 +1,17 @@
 import tuits from "../Data/posts.json";
+import {CREATE_TUIT, DELETE_TUIT, FIND_ALL_TUITS, UPDATE_TUIT} from "./tuits-actions";
 
 const TuitsReducer = (state = tuits, action) => {
     switch (action.type) {
-        case "create-tuit":
-            const newTuit = {
-                tuit: action.tuit,
-                _id: (new Date()).getTime() + "",
-                postedBy: {
-                    userName: "Elon Mush"
-                },
-                avatar: "static/elon_musk.jpg",
-                handle: "elonmush",
-                time: "Just Now",
-                stats: {
-                    retuits: 0,
-                    likes: 0,
-                    replies: 0
-                }
-            };
-            return [newTuit, ...state];
-        case "delete-tuit":
+        case FIND_ALL_TUITS:
+            return action.tuits;
+        case CREATE_TUIT:
+            return [action.tuit, ...state];
+        case DELETE_TUIT:
             return state.filter((tuit) => tuit._id !== action.tuit._id);
-        case "like-tuit":
-            return state.map((tuit) => {
-                if (tuit._id === action.tuit._id) {
-                    if (tuit.liked === true) {
-                        tuit.liked = false;
-                        tuit.stats.likes--;
-                    } else {
-                        tuit.liked = true;
-                        tuit.stats.likes++;
-                    }
-                }
-                return tuit;
-            })
+        case UPDATE_TUIT:
+            return state.map(tuit =>
+                tuit._id === action.tuit._id ? {...tuit, ...action.tuit} : tuit);
         default:
             return state;
     }
