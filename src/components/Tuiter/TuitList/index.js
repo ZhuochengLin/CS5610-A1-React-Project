@@ -1,6 +1,5 @@
 import TuitItem from "./TuitItem.js";
 import {useDispatch, useSelector} from "react-redux";
-import * as tuitsService from "../services/tuits-service";
 import {useEffect} from "react";
 import {findAllTuits} from "../Reducers/tuits-actions";
 
